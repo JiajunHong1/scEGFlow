@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel", "pip"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scegflow-energy"
+version = "0.1.0"
+description = "Anonymous implementation of the conditional scalar energy component used in scEGFlow."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "BSD-3-Clause"
+dependencies = [
+  "numpy>=1.23",
+  "torch>=2.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["scegflow_energy*"]
